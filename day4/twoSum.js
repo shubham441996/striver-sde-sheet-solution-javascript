@@ -15,3 +15,5 @@ function twoSum(arr, res) {
 let input = [2, 7, 11, 15];
 let res = twoSum(input, 9);
 console.log(res);
+
+countTheNumberOfSubarraysWithGivenXorK;
