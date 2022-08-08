@@ -55,6 +55,16 @@ class LinkedList {
     console.log(str);
     return str;
   }
+  printListByNode(node) {
+    let current = node;
+    let str = "";
+    while (current) {
+      str += `${current.val}-->`;
+      current = current.next;
+    }
+    console.log(str);
+    return str;
+  }
   getNode(index) {
     let currentNode = this.head;
     let count = 0;
