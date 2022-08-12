@@ -77,6 +77,16 @@ class LinkedList {
     }
     return null;
   }
+  moveLastElementToFirst() {
+    let current = this.head;
+    while (current && current.next && current.next.next) {
+      current = current.next;
+    }
+    let end = current.next;
+    end.next = this.head;
+    current.next = null;
+    this.head = end;
+  }
   reverse() {
     let current = this.head;
     let prev = null;
